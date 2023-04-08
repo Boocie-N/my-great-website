@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/c53cf37ce9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <div class="row first">
+          <div class="col-6">
+            <input
+              type="search"
+              id="search-input"
+              placeholder="Type a city.."
+              autofocus="on"
+              autocomplete="off"
+              class="form-control shadow-sm"
+            />
+          </div>
+          <div class="col-3">
+            <input
+              type="submit"
+              value="Search"
+              class="form-control btn btn-primary shadow-sm"
+            />
+          </div>
+          <div class="col-3">
+            <button class="btn btn-success w-100" id="current-location">
+              Current
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="row second">
+        <div class="col-4 main-place temperature">
+          <p class="current-city main-date" id="city"></p>
+
+          <h3 class="main-date" id="main-date">Saturday 13:00</h3>
+        </div>
+        <div class="col-4 main-place area">
+          <img
+            src="svg/sunny.svg"
+            alt="sunny icon"
+            width="50"
+            class="current-pic"
+          />
+          <h2 class="main-temp" id="temperature"></h2>
+          <span class="units"
+            ><a href="#" id="celsius">C°</a> |
+            <a href="#" id="fahrenheit">F°</a></span
+          >
+          <span class="real-feel">Feels like <span id="feel">28°C</span></span>
+        </div>
+        <h3 class="week-day">7-Day Forecast</h3>
+        <div class="row third">
+          <div class="col-12 col-md weekly-data">
+            <p class="weekday">Monday</p>
+            <p class="temp">28°C</p>
+            <img
+              src="svg/cloudyish.svg"
+              alt="Weather icon"
+              width="50"
+              class="weather-icon"
+            />
+          </div>
+          <div class="col-12 col-md weekly-data">
+            <p class="weekday">Tuesday</p>
+            <p class="temp">32°C</p>
+            <img
+              src="svg/sunny.svg"
+              alt="Weather icon"
+              width="50"
+              class="weather-icon"
+            />
+          </div>
+          <div class="col-12 col-md weekly-data">
+            <p class="weekday">Wednesday</p>
+            <p class="temp">27°C</p>
+            <img
+              src="svg/cloudy.svg"
+              alt="Weather icon"
+              width="50"
+              class="weather-icon"
+            />
+          </div>
+          <div class="col-12 col-md weekly-data">
+            <p class="weekday">Thursday</p>
+            <p class="temp">30°C</p>
+            <img
+              src="svg/cloudyish.svg"
+              alt="Weather icon"
+              width="50"
+              class="weather-icon"
+            />
+          </div>
+          <div class="col-12 col-md weekly-data">
+            <p class="weekday">Friday</p>
+            <p class="temp">29°C</p>
+            <img
+              src="svg/windy.svg"
+              alt="Weather icon"
+              width="50"
+              class="weather-icon"
+            />
+          </div>
+          <div class="col-12 col-md weekly-data">
+            <p class="weekday">Saturday</p>
+            <p class="temp">28°C</p>
+            <img
+              src="svg/rainy.svg"
+              alt="Weather icon"
+              width="50"
+              class="weather-icon"
+            />
+          </div>
+          <div class="col-12 col-md weekly-data">
+            <p class="weekday">Sunday</p>
+            <p class="temp">26°C</p>
+            <img
+              src="svg/storm.svg"
+              alt="Weather icon"
+              width="50"
+              class="weather-icon"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="creator">
+      Created by
+      <a href="https://contact.kesed@gmail.com" target="_blank">Boocie</a>
+    </p>
+    <script src="index.js"></script>
+  </body>
+</html>

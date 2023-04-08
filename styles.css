@@ -1,0 +1,154 @@
+.container {
+  font-family: "Poppins", sans-serif;
+  background-image: url("images/Travel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center-fixed;
+  margin-top: 2%;
+  border-radius: 8px;
+  opacity: 0.9;
+  color: white;
+  margin: 2 auto;
+}
+.searchbtn {
+  background: white;
+  border: none;
+  height: 35px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+  transition: all 200ms ease-in-out;
+}
+.searchbtn:hover {
+  background: rgba(84, 170, 219, 1);
+  cursor: pointer;
+  color: white;
+}
+
+.searchbar {
+  width: 300px;
+  border: none;
+  height: 35px;
+  border-radius: 4px;
+  transition: all 200ms ease-in-out;
+}
+.searchbar:hover {
+  border: 1px solid #1a64d6;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+.main-date {
+  display: block;
+  position: relative;
+  left: 90px;
+  bottom: -27px;
+}
+.current-pic {
+  display: block;
+  position: relative;
+  left: 40px;
+  bottom: -40px;
+  width: 120px;
+}
+.search-form {
+  margin-bottom: 64px;
+  margin-left: 0;
+  margin-top: 2%;
+  width: 662px;
+}
+.row.first {
+  padding-top: 22px;
+}
+.searchit {
+  margin-top: 4%;
+  max-width: max-content;
+}
+.row {
+  margin-left: 20px;
+}
+.row.third {
+  margin-left: -15px;
+  margin-bottom: 30px;
+}
+.week-day {
+  margin-left: 20px;
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+.current-city {
+  font-size: 48px;
+  font-weight: 500;
+}
+.location {
+  font-size: 30px;
+}
+.main-temp {
+  display: block;
+  position: relative;
+  left: 200px;
+  bottom: 60px;
+  font-size: 48px;
+}
+.real-feel {
+  display: block;
+  position: relative;
+  left: 200px;
+  bottom: 80px;
+}
+.units {
+  display: block;
+  position: relative;
+  left: 265px;
+  bottom: 125px;
+}
+
+.temp {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+.weekday {
+  font-size: 27px;
+  font-weight: 600;
+  text-align: center;
+}
+.weather-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.weekly-data {
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 4px 4px;
+  padding: 16px;
+  border-radius: 16px;
+  transition: all 200ms ease-in-out;
+}
+.weekly-data:hover {
+  box-shadow: 3px 3px 7px rgba(201, 201, 201, 0.416);
+  cursor: pointer;
+  background: rgba(84, 170, 219, 0.8);
+}
+.main-place {
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 0px 4px;
+  border-radius: 16px;
+  transition: all 200ms ease-in-out;
+}
+.main-place:hover {
+  box-shadow: 3px 3px 7px rgba(178, 196, 242, 0.416);
+  cursor: pointer;
+}
+
+.temperature {
+  margin-left: 0px;
+  margin-right: 200px;
+}
+.area {
+  margin-right: 35px;
+  margin-left: 100px;
+}
+.creator {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 20px;
+}
